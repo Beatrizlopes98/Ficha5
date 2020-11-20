@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="exercico 03">
+    <meta name="keywords" content="HTML">
+    <meta name="author" content="Beatriz Lopes">
+    <title>Formulário</title>
+</head>
+
+<body>
+    <form>
+        <fieldset>
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name">
+        </div>
+        <fieldset>
+            <legend>Age</legend>
+            <div>
+                <label for="menos18"> &#60 18 </label>
+                <input type="radio" name="age" id="menos18" value="menos18">
+                <label for="19-35">19-35</label>
+                <input type="radio" name="age" id="19-35" value="19-35">
+                <label for="36-48">36-48</label>
+                <input type="radio" name="age" id="36-48" value="36-48">
+                <label for="mais49">&#62 49</label>
+                <input type="radio" name="age" id="mais49" value="mais49">
+            </div>
+        </fieldset>
+        <div>
+            <label for="profession">Profession:</label>
+            <input type="text" name="profession" id="profession">
+            <label for="country">Country:</label>
+            <select name="country" id="country">
+                <option value="0">Portugal</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+        <fieldset>
+            <legend>Interests</legend>
+                Photography<input type="checkbox" name="photography" id="photography">
+                Music<input type="checkbox" name="music" id="music">
+                Cinema<input type="checkbox" name="cinema" id="cinema">
+                Computers<input type="checkbox" name="computers" id="computers">
+        </fieldset>
+        <div>
+            <label for="comments">How did you find us:</label>
+            <textarea name="comments" id="comments" rows="5" cols="30"></textarea>
+            <div>
+            <input type="submit" name="submibutton" id="submibutton" value="Submit">
+            </div>
+        </div>
+        </fieldset>
+    </form>
+
+</body>
+
+</html>
